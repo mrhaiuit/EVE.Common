@@ -18,8 +18,8 @@ namespace EVE.Commons
         [StringValue("Nhóm người dùng không được để trống")]
         UserClassIsNullOrEmpty = 400300,
 
-        [StringValue("SiteId không được để trống")]
-        SiteIdIsNullOrEmpty = 400400,
+        [StringValue("EmployeeId không được để trống")]
+        EmployeeIdIsNullOrEmpty = 400400,
 
         [StringValue("Mã khách hàng không được để trống")]
         AgentIdIsNullOrEmpty = 400500,
@@ -57,8 +57,8 @@ namespace EVE.Commons
         [StringValue("Mã khách hàng không được để trống")]
         CustomerNoIsNullOrEmpty = 400610,
 
-        [StringValue("Iso không được để trống")]
-        IsoIsNullOrEmpty = 400710,
+        [StringValue("Tên [Phòng giáo dục] không được để trống")]
+        EduDepartmentNameIsNullOrEmpty = 400710,
 
         [StringValue("Module Code không được để trống")]
         ModuleCodeIsNullOrEmpty = 400810,
@@ -263,7 +263,95 @@ namespace EVE.Commons
 
         [StringValue("Chức danh này không tồn tại")]
         PositionNotExist = 500110,
+
+        [StringValue("Tên kỳ đánh giá không được để trống")]
+        PeriodNameCanNotBeNull = 500120,
+
+        [StringValue("[Năm] không được để trống")]
+        YearCanNotBeNull = 500130,
+
+        [StringValue("[Từ ngày] không được để trống")]
+        FromDateCanNotBeNull = 500140,
+
+        [StringValue("[Đến ngày] không được để trống")]
+        ToDateCanNotBeNull = 500150,
+
+        [StringValue("[Sở giáo dục] không được để trống")]
+        EduProvinceIdIsNullOrEmpty = 500160,
+
+        [StringValue("[Quận/Huyện] không được để trống")]
+        DistrictIdIsNullOrEmpty = 500170,
+
+        [StringValue("Tên [Sở giáo dục] không được để trống")]
+        EduProvinceNameIsNullOrEmpty = 500180,
+
+        [StringValue("[Tỉnh] không được để trống")]
+        ProvinceIdIsNullOrEmpty = 500190,
+
+        [StringValue("[Tên nhân viên] không được để trống")]
+        EmployeeNameIsNullOrEmpty = 500200,
+
+        [StringValue("[Mã phòng giáo dục] không được để trống")]
+        EduDepartmentIdNullOrEmpty = 500210,
+
+        [StringValue("[UserName] không được để trống")]
+        UserNameIsNullOrEmpty = 500220,
+
+        [StringValue("[Cấp giáo dục] không được để trống")]
+        EduLevelCodeIsNullOrEmpty = 500230,
+
+        [StringValue("[Tiêu chuẩn] không được để trống")]
+        EvalStandardIdIsNullOrEmpty = 500240,
+
+        [StringValue("[Tiêu chí] không được để trống")]
+        EvalCriteriaNameIsNullOrEmpty = 500250,
+
+        [StringValue("[Số thứ tự] không được để trống")]
+        IdxIsNullOrEmpty = 500250,
+
+        [StringValue("[ID Tiêu chí] không được để trống")]
+        EvalCriteriaIdNullOrEmpty = 500260,
+
+        [StringValue("[ID Tiêu chí nhân viên] không được để trống")]
+        EvalDetailIdIsNullOrEmpty = 500270,
+
+        [StringValue("[Tiêu chuẩn] không được để trống")]
+        EvalMasterIsNullOrEmpty = 500280,
         
+        [StringValue("[Tiêu chí] không được để trống")]
+        EvalCriteriaIsNullOrEmpty = 500290,
+
+
+        [StringValue("[Người đánh giá] không được để trống")]
+        EmployeeIsNullOrEmpty = 500300,
+
+        [StringValue("[Người được đánh giá] không được để trống")]
+        EvalForEmployeeIsNullOrEmpty = 500310,
+
+        [StringValue("[Mã kết quả đánh giá] không được để trống")]
+        EvalResultCodeIsNullOrEmpty = 500320,
+
+        [StringValue("[Kết quả đánh giá] không được để trống")]
+        EvalResultNameIsNullOrEmpty = 500330,
+
+        [StringValue("[Chuẩn đánh giá] không được để trống")]
+        EvalStandardNameIsNullOrEmpty = 500340,
+
+        [StringValue("[Loại đánh giá] không được để trống")]
+        EvalTypeCodeIsNullOrEmpty = 500350,
+
+
+        [StringValue("[Cấp trường] không được để trống")]
+        SchoolLevelCodeIsNullOrEmpty = 500350,
+
+        [StringValue("[Nhóm quyền] không được để trống")]
+        UserGroupCodeIsNullOrEmpty = 500360,
+
+        [StringValue("[Tên nhóm quyền] không được để trống")]
+        UserGroupNameIsNullOrEmpty = 500370,
+
+        [StringValue("[Mã Form] không được để trống")]
+        FormCodeIsNullOrEmpty = 500380,
 
         #endregion
 

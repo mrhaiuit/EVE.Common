@@ -16,23 +16,31 @@ namespace EVE.Commons.Response
         public static async Task<T> Post(string url,
                                          object content)
         {
-            HttpResponseMessage response;
-            if(content == null)
+            try
             {
-                response = await Client.PostAsync(url, null);
-            }
-            else
-            {
-                response = await Client.PostAsync(url, new StringContent(JsonUtils<object>.ToJson(content), Encoding.UTF8, "application/json"));
-            }
 
-            if(response.IsSuccessStatusCode)
-            {
-                var res = await response.Content.ReadAsStringAsync();var obj = JsonUtils<T>.JsonToObj(res);
-                return obj;
-            }
+                HttpResponseMessage response;
+                if (content == null)
+                {
+                    response = await Client.PostAsync(url, null);
+                }
+                else
+                {
+                    response = await Client.PostAsync(url, new StringContent(JsonUtils<object>.ToJson(content), Encoding.UTF8, "application/json"));
+                }
 
-            return null;
+                if (response.IsSuccessStatusCode)
+                {
+                    var res = await response.Content.ReadAsStringAsync(); var obj = JsonUtils<T>.JsonToObj(res);
+                    return obj;
+                }
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public static async Task<T> Put(string url,
