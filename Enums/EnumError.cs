@@ -355,6 +355,8 @@ namespace EVE.Commons
 
         #endregion
 
+        [StringValue("Không tìm thấy dữ liệu!")]
+        DataNotFound = 700000,
 
     }
 }
