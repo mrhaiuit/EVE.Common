@@ -4031,26 +4031,26 @@ namespace EVE.Commons
         /// <typeparam name="T"></typeparam>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public static T RemoveWhiteSpace<T>(this T obj)
-        {
-            var properties = obj.Properties();
-            foreach (var property in properties)
-            {
-                if(property.PropertyType == typeof(string))
-                {
-                    obj.SetObjectProperty(property.Name, property.GetValue(obj, null)
-                                                                 .TrimEx());
-                }
-            }
+        //public static T RemoveWhiteSpace<T>(this T obj)
+        //{
+        //    var properties = obj.Properties();
+        //    foreach (var property in properties)
+        //    {
+        //        if(property.PropertyType == typeof(string))
+        //        {
+        //            obj.SetObjectProperty(property.Name, property.GetValue(obj, null)
+        //                                                         .TrimEx());
+        //        }
+        //    }
 
-            return obj;
-        }
+        //    return obj;
+        //}
 
-        public static List<T> RemoveWhiteSpaceForList<T>(this List<T> obj)
-        {
-            obj.ForEach(c => c.RemoveWhiteSpace());
-            return obj;
-        }
+        //public static List<T> RemoveWhiteSpaceForList<T>(this List<T> obj)
+        //{
+        //    obj.ForEach(c => c.RemoveWhiteSpace());
+        //    return obj;
+        //}
 
         /// <summary>
         ///     Will get the string value for a given enums value, this will

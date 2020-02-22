@@ -355,6 +355,15 @@ namespace EVE.Commons
 
         [StringValue("[Cấp giáo dục] không tồn tại")]
         EduLevelNotExist = 500390,
+
+        [StringValue("[Thông tin trường] không được phép trống!")]
+        SchoolIsNullOrEmpty = 500400,
+
+        [StringValue("[Mã trường] không được phép trống!")]
+        SchoolIdIsNullOrEmpty = 500410,
+
+        [StringValue("[Năm] không được phép trống!")]
+        YearIsNullOrEmpty = 500420,
         
         #endregion
 
