@@ -353,6 +353,9 @@ namespace EVE.Commons
         [StringValue("[Mã Form] không được để trống")]
         FormCodeIsNullOrEmpty = 500380,
 
+        [StringValue("[Cấp giáo dục] không tồn tại")]
+        EduLevelNotExist = 500390,
+        
         #endregion
 
         [StringValue("Không tìm thấy dữ liệu!")]

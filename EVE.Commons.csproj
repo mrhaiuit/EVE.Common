@@ -81,7 +81,7 @@
     <Compile Include="Enums\EnumEvalResult.cs" />
     <Compile Include="Enums\EnumFormActionType.cs" />
     <Compile Include="Enums\SingleEnumClass.cs" />
-    <Compile Include="Enums\SysCodeRef.cs" />
+    <Compile Include="Enums\EnumEduLevelCode.cs" />
     <Compile Include="Enums\EnumEvalLevel.cs" />
     <Compile Include="Extension.cs" />
     <Compile Include="ExtensionMethods.cs" />
