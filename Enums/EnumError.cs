@@ -374,6 +374,15 @@ namespace EVE.Commons
 
         [StringValue("[Delete] thất bại!")]
         DeleteFailse = 500670,
+
+        [StringValue("[Mã nhân viên đánh giá] không được để trống!")]
+        EvalEmployeeIdIsNullOrEmpty = 500680,
+
+        [StringValue("[Mã nhân viên được đánh giá] không được để trống!")]
+        BeEvalEmployeeIdIsNullOrEmpty = 500690,
+
+        [StringValue("[Mã kỳ đánh giá] không được để trống!")]
+        PeriodIdIsNullOrEmpty = 500700,
         #endregion
 
         [StringValue("Không tìm thấy dữ liệu!")]
