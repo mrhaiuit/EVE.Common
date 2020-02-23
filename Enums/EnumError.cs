@@ -10,7 +10,7 @@ namespace EVE.Commons
         ArrayDetailIsNullOrEmpty = 400000,
 
         [StringValue("Tên đăng nhập không được để trống")]
-        UsernameIsNullOrEmpty = 400100,
+        UserNameIsNullOrEmpty = 400100,
 
         [StringValue("Mật khẩu không được để trống")]
         PasswordIsNullOrEmpty = 400200,
@@ -86,293 +86,294 @@ namespace EVE.Commons
         #region 500xxx
 
         [StringValue("Something wrong :(")]
-        BadRequest = 500000,
+        BadRequest = 590000,
 
         [StringValue("Tên đăng nhập hoặc mật khẩu không chính xác")]
-        LogonInvalid = 500100,
+        LogonInvalid = 590100,
 
         [StringValue("Người dùng không thuộc nhóm này")]
-        UserClassInvalid = 500200,
+        UserClassInvalid = 590200,
 
         [StringValue("Mã khách hàng đã tồn tại")]
-        AgentHasExist = 500300,
+        AgentHasExist = 590300,
 
         [StringValue("Khách hàng không tồn tại")]
-        AgentNotExist = 500400,
+        AgentNotExist = 590400,
 
         [StringValue("Phòng đào tạo đã tồn tại")]
-        EduDepartmentHasExist = 500500,
+        EduDepartmentHasExist = 590500,
 
         [StringValue("Phòng đào tạo không tồn tại")]
-        EduDepartmentNotExist = 500600,
+        EduDepartmentNotExist = 590600,
 
         [StringValue("Nhân viên đã tồn tại")]
-        EmployeeHasExist = 500700,
+        EmployeeHasExist = 590700,
 
         [StringValue("Nhân viên không tồn tại")]
-        EmployeeNotExist = 500800,
+        EmployeeNotExist = 590800,
 
         [StringValue("Nhân viên đã tồn tại")]
-        MenuGroupHasExist = 500900,
+        MenuGroupHasExist = 590900,
 
         [StringValue("MenuGroup không tồn tại")]
-        MenuGroupNotExist = 500010,
+        MenuGroupNotExist = 590010,
 
         [StringValue("Sở giáo dục đã tồn tại")]
-        EduProvinceHasExist = 500110,
+        EduProvinceHasExist = 590110,
 
         [StringValue("Sở giáo dục không tồn tại")]
-        EduProvinceNotExist = 500210,
+        EduProvinceNotExist = 590210,
 
         [StringValue("Tiêu chí đã tồn tại")]
-        EvalCriteriaHasExist = 500310,
+        EvalCriteriaHasExist = 590310,
 
         [StringValue("Tiêu chí không tồn tại")]
-        EvalCriteriaNotExist = 500410,
+        EvalCriteriaNotExist = 590410,
 
         [StringValue("EvalDetail đã tồn tại")]
-        EvalDetailHasExist = 500510,
+        EvalDetailHasExist = 590510,
 
         [StringValue("EvalDetail không tồn tại")]
-        EvalDetailNotExist = 500610,
+        EvalDetailNotExist = 590610,
 
         [StringValue("EvalGuide đã tồn tại")]
-        EvalGuideHasExist = 500710,
+        EvalGuideHasExist = 590710,
 
         [StringValue("EvalGuide không tồn tại")]
-        EvalGuideNotExist = 500810,
+        EvalGuideNotExist = 590810,
 
         [StringValue("UserGroupEmployee đã tồn tại")]
-        UserGroupEmployeeHasExist = 500910,
+        UserGroupEmployeeHasExist = 590910,
 
         [StringValue("UserGroupEmployee không tồn tại")]
-        UserGroupEmployeeNotExist = 500020,
+        UserGroupEmployeeNotExist = 590020,
 
         [StringValue("EvalMaster đã tồn tại")]
-        EvalMasterHasExist = 500120,
+        EvalMasterHasExist = 590120,
 
         [StringValue("EvalMaster không tồn tại")]
-        EvalMasterNotExist = 500220,
+        EvalMasterNotExist = 590220,
 
         [StringValue("EvalPeriod đã tồn tại")]
-        EvalPeriodHasExist = 500320,
+        EvalPeriodHasExist = 590320,
 
         [StringValue("EvalPeriod không tồn tại")]
-        EvalPeriodNotExist = 500420,
+        EvalPeriodNotExist = 590420,
 
         [StringValue("Phân quyền cho nhóm người dùng này đã tồn tại")]
-        UserClassMenuItemHasExist = 500520,
+        UserClassMenuItemHasExist = 590520,
 
         [StringValue("Phân quyền cho nhóm người dùng này không tồn tại")]
-        UserClassMenuItemNotExist = 500620,
+        UserClassMenuItemNotExist = 590620,
+
 
         [StringValue("EvalResult đã tồn tại")]
-        EvalResultHasExist = 500720,
+        EvalResultHasExist = 500000,
 
         [StringValue("EvalResult không tồn tại")]
-        EvalResultNotExist = 500820,
+        EvalResultNotExist = 500010,
 
         [StringValue("Nhóm người dùng cho user này không tồn tại")]
-        OperatorUserClassSiteNotExist = 500920,
+        OperatorUserClassSiteNotExist = 500020,
 
         [StringValue("Nhóm người dùng cho user này đã tồn tại")]
         OperatorUserClassSiteHasExist = 500030,
 
         [StringValue("Menu item action cho nhóm người dùng này không tồn tại")]
-        UserClassFormActionNotExist =500130,
+        UserClassFormActionNotExist =500040,
 
         [StringValue("EvalStandard này không tồn tại")]
-        EvalStandardNotExist = 500230,
+        EvalStandardNotExist = 500050,
 
         [StringValue("EvalStandard này đã tồn tại")]
-        EvalStandardHasExist = 500330,
+        EvalStandardHasExist = 500060,
 
         [StringValue("EvalState này không tồn tại")]
-        EvalStateNotExist = 500430,
+        EvalStateNotExist = 500070,
 
         [StringValue("EvalState này đã tồn tại")]
-        EvalStateHasExist = 500530,
+        EvalStateHasExist = 500080,
 
         [StringValue("EvalTypeBE này không tồn tại")]
-        EvalTypeBENotExist = 500430,
+        EvalTypeBENotExist = 500090,
 
         [StringValue("EvalTypeBE này đã tồn tại")]
-        EvalTypeBEHasExist = 500530,
+        EvalTypeBEHasExist = 500100,
 
         [StringValue("FormGroup này không tồn tại")]
-        FormGroupNotExist = 500630,
+        FormGroupNotExist = 500110,
 
         [StringValue("FormGroup này đã tồn tại")]
-        FormGroupHasExist = 500730,
+        FormGroupHasExist = 500120,
 
         [StringValue("FormCode này không tồn tại")]
-        FormsNotExist = 500830,
+        FormsNotExist = 500130,
 
         [StringValue("FormCode này đã tồn tại")]
-        FormsHasExist = 500930,
+        FormsHasExist = 500140,
 
         [StringValue("LoginUser này không tồn tại")]
-        LoginUserNotExist = 500040,
+        LoginUserNotExist = 500150,
 
         [StringValue("LoginUser này đã tồn tại")]
-        LoginUserHasExist = 500140,
+        LoginUserHasExist = 500160,
 
         [StringValue("School này không tồn tại")]
-        SchoolNotExist = 500240,
+        SchoolNotExist = 500170,
 
         [StringValue("School này đã tồn tại")]
-        SchoolHasExist = 500340,
+        SchoolHasExist = 500180,
 
         [StringValue("SchoolLevel này không tồn tại")]
-        SchoolLevelNotExist = 500440,
+        SchoolLevelNotExist = 500190,
 
         [StringValue("SchoolLevel này đã tồn tại")]
-        SchoolLevelHasExist = 500540,
+        SchoolLevelHasExist = 500200,
 
         [StringValue("UserGroup này không tồn tại")]
-        UserGroupNotExist = 500640,
+        UserGroupNotExist = 500210,
 
         [StringValue("UserGroup này đã tồn tại")]
-        UserGroupHasExist = 500740,
+        UserGroupHasExist = 500220,
 
         [StringValue("UserGroupForm này không tồn tại")]
-        UserGroupFormNotExist = 500840,
+        UserGroupFormNotExist = 500230,
 
         [StringValue("UserGroupForm này đã tồn tại")]
-        UserGroupFormHasExist = 500940,
+        UserGroupFormHasExist = 500240,
 
         [StringValue("EvalType này không tồn tại")]
-        EvalTypeNotExist = 500050,
+        EvalTypeNotExist = 500250,
 
         [StringValue("Ward này không tồn tại")]
-        WardNotExist = 500060,
+        WardNotExist = 500260,
         [StringValue("Province này không tồn tại")]
-        ProvinceNotExist = 500070,
+        ProvinceNotExist = 500270,
 
         [StringValue("District này không tồn tại")]
-        DistrictNotExist = 500070,
+        DistrictNotExist = 500280,
 
         [StringValue("Country này không tồn tại")]
-        CountryNotExist = 500080,
+        CountryNotExist = 500290,
 
         [StringValue("User này chưa được cấp quyền")]
-        UserNotGrandPermission = 500090,
+        UserNotGrandPermission = 500300,
 
         [StringValue("Không tồn tại tiêu chí của tiêu chuẩn này")]
-        CateriaNotExistWithStandard = 500100,
+        CateriaNotExistWithStandard = 500310,
 
         [StringValue("Chức danh này không tồn tại")]
-        PositionNotExist = 500110,
+        PositionNotExist = 500320,
 
         [StringValue("Tên kỳ đánh giá không được để trống")]
-        PeriodNameCanNotBeNull = 500120,
+        PeriodNameCanNotBeNull = 500330,
 
         [StringValue("[Năm] không được để trống")]
-        YearCanNotBeNull = 500130,
+        YearCanNotBeNull = 500340,
 
         [StringValue("[Từ ngày] không được để trống")]
-        FromDateCanNotBeNull = 500140,
+        FromDateCanNotBeNull = 500350,
 
         [StringValue("[Đến ngày] không được để trống")]
-        ToDateCanNotBeNull = 500150,
+        ToDateCanNotBeNull = 500360,
 
         [StringValue("[Sở giáo dục] không được để trống")]
-        EduProvinceIdIsNullOrEmpty = 500160,
+        EduProvinceIdIsNullOrEmpty = 500370,
 
         [StringValue("[Quận/Huyện] không được để trống")]
-        DistrictIdIsNullOrEmpty = 500170,
+        DistrictIdIsNullOrEmpty = 500380,
 
         [StringValue("Tên [Sở giáo dục] không được để trống")]
-        EduProvinceNameIsNullOrEmpty = 500180,
+        EduProvinceNameIsNullOrEmpty = 500390,
 
         [StringValue("[Tỉnh] không được để trống")]
-        ProvinceIdIsNullOrEmpty = 500190,
+        ProvinceIdIsNullOrEmpty = 500400,
 
         [StringValue("[Tên nhân viên] không được để trống")]
-        EmployeeNameIsNullOrEmpty = 500200,
+        EmployeeNameIsNullOrEmpty = 500410,
 
         [StringValue("[Mã phòng giáo dục] không được để trống")]
-        EduDepartmentIdNullOrEmpty = 500210,
+        EduDepartmentIdNullOrEmpty = 500420,
 
-        [StringValue("[UserName] không được để trống")]
-        UserNameIsNullOrEmpty = 500220,
+        [StringValue("[UserName] đã tồn tại!")]
+        UserNameHasExits= 500430,
 
         [StringValue("[Cấp giáo dục] không được để trống")]
-        EduLevelCodeIsNullOrEmpty = 500230,
+        EduLevelCodeIsNullOrEmpty = 500440,
 
         [StringValue("[Tiêu chuẩn] không được để trống")]
-        EvalStandardIdIsNullOrEmpty = 500240,
+        EvalStandardIdIsNullOrEmpty = 500450,
 
         [StringValue("[Tiêu chí] không được để trống")]
-        EvalCriteriaNameIsNullOrEmpty = 500250,
+        EvalCriteriaNameIsNullOrEmpty = 500460,
 
         [StringValue("[Số thứ tự] không được để trống")]
         IdxIsNullOrEmpty = 500250,
 
         [StringValue("[ID Tiêu chí] không được để trống")]
-        EvalCriteriaIdNullOrEmpty = 500260,
+        EvalCriteriaIdNullOrEmpty = 500470,
 
         [StringValue("[ID Tiêu chí nhân viên] không được để trống")]
-        EvalDetailIdIsNullOrEmpty = 500270,
+        EvalDetailIdIsNullOrEmpty = 500480,
 
         [StringValue("[Tiêu chuẩn] không được để trống")]
-        EvalMasterIsNullOrEmpty = 500280,
+        EvalMasterIsNullOrEmpty = 500490,
         
         [StringValue("[Tiêu chí] không được để trống")]
-        EvalCriteriaIsNullOrEmpty = 500290,
+        EvalCriteriaIsNullOrEmpty = 500500,
 
 
         [StringValue("[Người đánh giá] không được để trống")]
-        EmployeeIsNullOrEmpty = 500300,
+        EmployeeIsNullOrEmpty = 500510,
 
         [StringValue("[Người được đánh giá] không được để trống")]
-        EvalForEmployeeIsNullOrEmpty = 500310,
+        EvalForEmployeeIsNullOrEmpty = 500520,
 
         [StringValue("[Mã kết quả đánh giá] không được để trống")]
-        EvalResultCodeIsNullOrEmpty = 500320,
+        EvalResultCodeIsNullOrEmpty = 500530,
 
         [StringValue("[Kết quả đánh giá] không được để trống")]
-        EvalResultNameIsNullOrEmpty = 500330,
+        EvalResultNameIsNullOrEmpty = 500540,
 
         [StringValue("[Chuẩn đánh giá] không được để trống")]
-        EvalStandardNameIsNullOrEmpty = 500340,
+        EvalStandardNameIsNullOrEmpty = 500550,
 
         [StringValue("[Loại đánh giá] không được để trống")]
-        EvalTypeCodeIsNullOrEmpty = 500350,
+        EvalTypeCodeIsNullOrEmpty = 500560,
 
 
         [StringValue("[Cấp trường] không được để trống")]
-        SchoolLevelCodeIsNullOrEmpty = 500350,
+        SchoolLevelCodeIsNullOrEmpty = 500570,
 
         [StringValue("[Nhóm quyền] không được để trống")]
-        UserGroupCodeIsNullOrEmpty = 500360,
+        UserGroupCodeIsNullOrEmpty = 500580,
 
         [StringValue("[Tên nhóm quyền] không được để trống")]
-        UserGroupNameIsNullOrEmpty = 500370,
+        UserGroupNameIsNullOrEmpty = 500590,
 
         [StringValue("[Mã Form] không được để trống")]
-        FormCodeIsNullOrEmpty = 500380,
+        FormCodeIsNullOrEmpty = 500600,
 
         [StringValue("[Cấp giáo dục] không tồn tại")]
-        EduLevelNotExist = 500390,
+        EduLevelNotExist = 500610,
 
         [StringValue("[Thông tin trường] không được phép trống!")]
-        SchoolIsNullOrEmpty = 500400,
+        SchoolIsNullOrEmpty = 500620,
 
         [StringValue("[Mã trường] không được phép trống!")]
-        SchoolIdIsNullOrEmpty = 500410,
+        SchoolIdIsNullOrEmpty = 500630,
 
         [StringValue("[Năm] không được phép trống!")]
-        YearIsNullOrEmpty = 500420,
+        YearIsNullOrEmpty = 500640,
 
         [StringValue("[Insert] thất bại!")]
-        InsertFailse = 500430,
+        InsertFailse = 500650,
 
         [StringValue("[Update] thất bại!")]
-        UpdateFailse = 500440,
+        UpdateFailse = 500660,
 
         [StringValue("[Delete] thất bại!")]
-        DeleteFailse = 500450,
+        DeleteFailse = 500670,
         #endregion
 
         [StringValue("Không tìm thấy dữ liệu!")]
