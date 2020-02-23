@@ -364,7 +364,15 @@ namespace EVE.Commons
 
         [StringValue("[Năm] không được phép trống!")]
         YearIsNullOrEmpty = 500420,
-        
+
+        [StringValue("[Insert] thất bại!")]
+        InsertFailse = 500430,
+
+        [StringValue("[Update] thất bại!")]
+        UpdateFailse = 500440,
+
+        [StringValue("[Delete] thất bại!")]
+        DeleteFailse = 500450,
         #endregion
 
         [StringValue("Không tìm thấy dữ liệu!")]
