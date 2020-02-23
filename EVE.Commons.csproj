@@ -77,6 +77,8 @@
     <Compile Include="Enums\CustomTypeEditorBrowsable.cs" />
     <Compile Include="Enums\enDialogQuestions.cs" />
     <Compile Include="Enums\EnumError.cs" />
+    <Compile Include="Enums\EnumEvalType.cs" />
+    <Compile Include="Enums\EnumUserGroup.cs" />
     <Compile Include="Enums\EnumSchoolLevel.cs" />
     <Compile Include="Enums\EnumEvalResult.cs" />
     <Compile Include="Enums\EnumFormActionType.cs" />

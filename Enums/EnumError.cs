@@ -383,6 +383,19 @@ namespace EVE.Commons
 
         [StringValue("[Mã kỳ đánh giá] không được để trống!")]
         PeriodIdIsNullOrEmpty = 500700,
+
+        [StringValue("Tên (Khối lớp/Tổ bộ môn) không được để trống!")]
+        SchoolDepartmentIdIsNullOrEmpty = 500710,
+
+        [StringValue("[ SchoolDepartmentId] không được để trống!")]
+        SchoolDepartmentNameIsNullOrEmpty = 500720,
+
+        [StringValue("[Tổ bộ môn/Khối lớp] không tồn tại!")]
+        SchoolDepartmentNotExist = 500730,
+
+        [StringValue("[Tổ bộ môn/Khối lớp] đã tồn tại!")]
+        SchoolDepartmentHasExist = 500730,
+
         #endregion
 
         [StringValue("Không tìm thấy dữ liệu!")]
