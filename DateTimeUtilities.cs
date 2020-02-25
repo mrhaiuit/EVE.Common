@@ -152,14 +152,22 @@ namespace EVE.Commons
                 $"TO_DATE('{DateTimeUtilities.GetNullDate().ToString(GlobalSettings.StrDMY)}', {GlobalSettings.DbStrDMY} )";
         }
 
-        public static DateTime GetLastDayOfMonthEx(this object str)
+        public static DateTime? GetLastDayOfMonthEx(this object str)
         {
-            var lastDayOfMonth = CheckDateEx(str);
+            if (str == null)
+                return null;
+            if (CheckDateEx(str) == null)
+                return null;
+            var lastDayOfMonth = CheckDateEx(str) ?? DateTime.MinValue;
             return new DateTime(lastDayOfMonth.Year, lastDayOfMonth.Month, DateTime.DaysInMonth(lastDayOfMonth.Year, lastDayOfMonth.Month), 23, 59, 59);
         }
-        public static DateTime GetBeginDayOfMonthEx(this object str)
+        public static DateTime? GetBeginDayOfMonthEx(this object str)
         {
-            var lastDayOfMonth = CheckDateEx(str);
+            if (str == null)
+                return null;
+            if (CheckDateEx(str) == null)
+                return null;
+            var lastDayOfMonth = CheckDateEx(str) ?? DateTime.MinValue;
             return new DateTime(lastDayOfMonth.Year, lastDayOfMonth.Month,01, 00, 00, 00);
         }
 
@@ -169,7 +177,7 @@ namespace EVE.Commons
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        public static DateTime CheckDateEx(this object str)
+        public static DateTime? CheckDateEx(this object str)
         {
             DateTime nullDate = DateTimeUtilities.GetNullDate();
             DateTime date = new DateTime();

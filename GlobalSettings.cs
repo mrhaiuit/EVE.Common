@@ -322,7 +322,7 @@ namespace EVE.Commons
 
             if (GetLastInputInfo(ref lastInputInfo))
             {
-                var lastInputTick = lastInputInfo.dwTime.CheckIntEx();
+                var lastInputTick = lastInputInfo.dwTime.CheckIntEx() ?? int.MinValue;
 
                 idleTime = envTicks - lastInputTick;
             }
@@ -403,8 +403,8 @@ namespace EVE.Commons
 
         #endregion
 
-     
-        public static int ConsigneeLengthToCompare => ConfigurationManager.AppSettings["ConsigneeLengthToCompare"].CheckIntEx();
+
+        public static int ConsigneeLengthToCompare => ConfigurationManager.AppSettings["ConsigneeLengthToCompare"].CheckIntEx() ?? 0;
         public static int MaxLengthConsignee => ConsigneeLengthToCompare <= 0 ? 35 : ConsigneeLengthToCompare;
     }
 }

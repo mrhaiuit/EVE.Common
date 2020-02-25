@@ -993,10 +993,10 @@ namespace EVE.Commons
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        public static int CheckIntEx(this object str)
+        public static int? CheckIntEx(this object str)
         {
             if (str == null)
-                return 0;
+                return null;
 
             Double retValue;
 
@@ -1005,18 +1005,13 @@ namespace EVE.Commons
                 return (int)retValue;
             }
 
-            //if (Int32.TryParse(str.TrimEx(), out retValue))
-            //{
-            //    return retValue;
-            //}
-
             return 0;
         }
 
-        public static decimal CheckDecimalEx(this object str)
+        public static decimal? CheckDecimalEx(this object str)
         {
             if (str == null)
-                return (decimal)0.0;
+                return null;
 
             decimal retValue;
             if (decimal.TryParse(str.TrimEx(), out retValue))
@@ -1033,10 +1028,10 @@ namespace EVE.Commons
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        public static double CheckDoubleEx(this object str)
+        public static double? CheckDoubleEx(this object str)
         {
             if (str == null)
-                return 0.0;
+                return null;
 
             double retValue;
             if (Double.TryParse(str.TrimEx(), out retValue))
@@ -1053,10 +1048,10 @@ namespace EVE.Commons
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>
-        public static long CheckLongEx(this object str)
+        public static long? CheckLongEx(this object str)
         {
             if (str == null)
-                return 0;
+                return null;
 
             long retValue;
             if (Int64.TryParse(str.TrimEx(), out retValue))
@@ -1599,7 +1594,7 @@ namespace EVE.Commons
                 }
                 else
                 {
-                    decNumber = decNumber.ToString().CheckIntEx();
+                    decNumber = decNumber.ToString().CheckIntEx() ?? 0;
                     result = $"{decNumber:#,0}";           //Hao, 26/08/2010
                 }
 
@@ -1686,7 +1681,7 @@ namespace EVE.Commons
 
             precionNum = Math.Round(precionNum, 10);
 
-            double retNum = precionNum.ToString("0.0000000000").SubstringEx(0, 2 + maxPrecion).CheckDoubleEx();
+            double retNum = precionNum.ToString("0.0000000000").SubstringEx(0, 2 + maxPrecion).CheckDoubleEx() ?? 0;
             var checkNum = precionNum.ToString("0.0000000000").SubstringEx(2 + maxPrecion, 1).CheckIntEx();
 
             if (checkNum >= 5)
@@ -1911,7 +1906,7 @@ namespace EVE.Commons
             retVal = retVal.Replace(".", "@");
             retVal = retVal.Replace(",", ".");
             retVal = retVal.Replace("@", ",");
-            return retVal.CheckDoubleEx();
+            return retVal.CheckDoubleEx() ?? 0;
         }
 
         public static double StringToNumber(this string psInput)
@@ -1929,14 +1924,14 @@ namespace EVE.Commons
                 if (dotIdx > commaIdx)
                 {
                     retVal = retVal.Replace(",", "");
-                    return retVal.CheckDoubleEx();
+                    return retVal.CheckDoubleEx() ?? 0;
                 }
 
                 if (dotIdx < commaIdx)
                 {
                     retVal = retVal.Replace("", "");
                     retVal = retVal.Replace(",", ".");
-                    return retVal.CheckDoubleEx();
+                    return retVal.CheckDoubleEx() ?? 0;
                 }
             }
 
@@ -1951,7 +1946,7 @@ namespace EVE.Commons
                     retVal = retVal.Replace(",", ".");
                 }
 
-                return retVal.CheckDoubleEx();
+                return retVal.CheckDoubleEx() ?? 0;
             }
 
             if (psInput.Count(c => c == '.') > 1)
@@ -1959,7 +1954,7 @@ namespace EVE.Commons
                 retVal = retVal.Replace(".", "");
             }
 
-            return retVal.CheckDoubleEx();
+            return retVal.CheckDoubleEx() ?? 0;
         }
 
         #endregion
@@ -2277,8 +2272,8 @@ namespace EVE.Commons
             int pos = timeSpan.IndexOf(":", StringComparison.Ordinal) + 1;
             if (pos > 0)
             {
-                return timeSpan.SubstringEx(0, pos - 1).CheckDoubleEx() +
-                              timeSpan.SubstringEx(pos).CheckDoubleEx() / 60;
+                return timeSpan.SubstringEx(0, pos - 1).CheckDoubleEx() ?? 0 +
+                              timeSpan.SubstringEx(pos).CheckDoubleEx() ?? 0 / 60;
             }
 
             return 0;
@@ -2547,7 +2542,7 @@ namespace EVE.Commons
                 {
                     if (ColFormat.Value.TrimEx().IsDateTime())
                     {
-                        ColFormat.Value = ColFormat.Value.CheckDateEx().DateTimeToString();
+                        ColFormat.Value = (ColFormat.Value.CheckDateEx() ?? DateTime.MinValue).DateTimeToString();
                     }
                 }
                 catch (Exception)
@@ -3115,7 +3110,7 @@ namespace EVE.Commons
                 return 9999;
             }
 
-            return temp.CheckDoubleEx();
+            return temp.CheckDoubleEx() ?? 0;
         }
 
         /// <summary>
