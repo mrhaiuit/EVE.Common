@@ -998,11 +998,11 @@ namespace EVE.Commons
             if (str == null)
                 return null;
 
-            Double retValue;
+            int retValue;
 
-            if (Double.TryParse(str.TrimEx(), out retValue))
+            if (int.TryParse(str.TrimEx(), out retValue))
             {
-                return (int)retValue;
+                return retValue;
             }
 
             return 0;
