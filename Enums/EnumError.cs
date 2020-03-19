@@ -394,12 +394,18 @@ namespace EVE.Commons
         SchoolDepartmentNotExist = 500730,
 
         [StringValue("[Tổ bộ môn/Khối lớp] đã tồn tại!")]
-        SchoolDepartmentHasExist = 500730,
+        SchoolDepartmentHasExist = 500740,
+
+        [StringValue("[Cập nhật thất bại]. Có thể đã tồn tại một dữ liệu xác nhận cuối cùng!")]
+        EvalMasterFinalHasExits = 500750,
 
         #endregion
 
         [StringValue("Không tìm thấy dữ liệu!")]
         DataNotFound = 700000,
+
+        [StringValue("Cập nhật dữ liệu thất bại!")]
+        UpdateFaile = 700010,
 
     }
 }
