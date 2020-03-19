@@ -25,6 +25,8 @@ namespace EVE.Commons
 
         public static readonly EnumUserGroup SchoolTeacher = new EnumUserGroup("TEAC");
 
+        public static readonly EnumUserGroup LeadSubject = new EnumUserGroup("TLEAD");
+
         /// <summary>
         /// Constructor
         /// </summary>
