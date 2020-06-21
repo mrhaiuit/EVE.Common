@@ -21,6 +21,10 @@ namespace EVE.Commons
 
         public static readonly EnumUserGroup SchoolPrimary = new EnumUserGroup("PRIN");
 
+        public static readonly EnumUserGroup Officer = new EnumUserGroup("OFFI");
+
+        public static readonly EnumUserGroup SubSchoolPrimary = new EnumUserGroup("SPRIN");
+
         public static readonly EnumUserGroup EduProvince = new EnumUserGroup("PROV");
 
         public static readonly EnumUserGroup SchoolTeacher = new EnumUserGroup("TEAC");
