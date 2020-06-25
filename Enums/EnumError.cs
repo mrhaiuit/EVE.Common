@@ -399,6 +399,15 @@ namespace EVE.Commons
         [StringValue("[Cập nhật thất bại]. Có thể đã tồn tại một dữ liệu xác nhận cuối cùng!")]
         EvalMasterFinalHasExits = 500750,
 
+        [StringValue("SubPrincipalCiteria đã tồn tại!")]
+        SubPrincipalCriteriaHasExist = 500760,
+
+        [StringValue("SubPrincipalCiteria không tồn tại!")]
+        SubPrincipalCriteriaNotExits = 500770,
+
+        [StringValue("Mã hiệu phó là bắt buộc!")]
+        SubPrincipalIdIsNullOrEmpty = 500780,
+
         #endregion
 
         [StringValue("Không tìm thấy dữ liệu!")]
